@@ -14,7 +14,10 @@ To check for new images evry hour, the following line should be added to the cro
 00 * * * * /usr/bin/scripts/papel_de_parede/papel_de_parede.sh >> /usr/bin/scripts/papel_de_parede/papel_de_parede.log 2>&1
 
 This could be done with the command:
-#crontab -e
+# crontab -e
 More info about crontab and the syntax http://www.adminschoice.com/crontab-quick-reference/
 
 After downloading the script the image could be used to change the desktop image periodically or in every login, and also to be send thru email.
+
+Make sure that the script has the right permissions:
+# chmod +x papel_de_parede.sh
